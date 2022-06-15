@@ -1,0 +1,115 @@
+.container {
+    max-width: 1120px;
+    min-height: calc(100vh - 12.41rem);
+    margin: 0 auto;
+    padding: 0 2rem;
+    margin-bottom: 10rem;
+}
+
+.posts {
+    max-width: 720px;
+    margin: 5rem auto 0;
+
+
+    // Slug Style
+    .titleSlug {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    // Slug Style
+    .content {
+        color: #E1E1E6;
+        font-weight: 300;
+        line-height: 1.8rem;
+        text-align: justify;
+        font-family: 'Poppins', sans-serif;
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 2rem 0rem;
+        }
+
+        p {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            color: var(--gold);
+            display: -webkit-inline-box;
+        }
+
+        li::marker {
+            color: var(--gold);
+            margin-right: 10px;
+        }
+
+        li {
+            margin-top: 0.7rem;
+            margin-bottom: 0.7rem;
+
+            div {
+                margin-left: 0.8rem;
+            }
+        }
+
+        ol, ul {
+            margin-left: 1.2rem;
+        }
+    }
+    
+    .time {
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            color: var(--gray-300);
+            margin-bottom: 1rem;
+    }
+
+    a {
+        display: block;
+
+        & + a {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--gray-700)
+        }
+
+        time {
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            color: var(--gray-300)
+        }
+
+        strong {
+            display: block;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: .5rem;
+            line-height: 2rem;
+
+            transition: color .2s;
+        }
+
+        p {
+            color: #ccc;
+            font-weight: 300;
+            line-height: 1.8rem;
+            text-align: justify;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        &:hover strong {
+            color: var(--yellow-500);
+        }
+    }
+}
+
+.isFallback {
+    height: calc(100vh - 13.69rem);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
